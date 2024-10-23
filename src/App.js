@@ -86,21 +86,41 @@ const App = () => {
                         </select>
                     </div>
                 </div>
+                <nav className="navigation">
+                    <ul className="nav-links">
+                        <li className="nav-item">
+                            <i className="fa fa-map-marker" aria-hidden="true"></i> Wybierz swoje kino
+                        </li>
+                        <li className="nav-item">
+                            <i className="fa fa-user" aria-hidden="true"></i> Logowanie
+                        </li>
+                        <li className="nav-item">
+                            Rejestracja
+                        </li>
+                    </ul>
+                </nav>
                 <nav className="middle-header">
                     <ul className="nav-links">
-                        <li className="inactive-link">{language === 'Polski' ? "Repertuar" : "Repertoire"}</li>
+                        <li>
+                            <a href="https://www.cinema-city.pl/kina/lublinplaza/1084#/buy-tickets-by-cinema?in-cinema=1084&at=2024-10-23&view-mode=list"
+                               className="active-link">
+                                {language === 'Polski' ? "Repertuar" : "Repertuare"}
+                            </a>
+                        </li>
                         <li className="inactive-link">{language === 'Polski' ? "Oferty" : "Offers"}</li>
                         <li className="inactive-link">{language === 'Polski' ? "Prezenty" : "Gifts"}</li>
                         <li className="inactive-link">{language === 'Polski' ? "Bar" : "Bar"}</li>
                         <li className="inactive-link">{language === 'Polski' ? "Szkoły" : "Schools"}</li>
                         <li className="inactive-link">Blog</li>
-                        <li>
-                            <a href="https://www.cinema-city.pl" className="active-link">
-                                {language === 'Polski' ? "Przejdź do CinemaCity" : "Go to CinemaCity"}
-                            </a>
-                        </li>
+                        <li className="inactive-link">Unlimited</li>
+                        <li className="inactive-link">4DX</li>
+                        <li className="inactive-link">IMAX</li>
+                        <li className="inactive-link">SCREENX</li>
+                        <li className="inactive-link">SCREENX</li>
+
                     </ul>
                 </nav>
+
             </header>
 
             {/* Sekcja nad sliderem */}
