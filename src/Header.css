@@ -17,7 +17,10 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
+.navigation {
+    flex-grow: 1;
+    margin-left: 40px;
+}
 /* Stylowanie nagłówka */
 .header {
     color: #fff;
@@ -193,7 +196,7 @@ body {
 /* Kropki nawigacyjne */
 .dots {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     margin-top: 10px;
 }
 
@@ -305,7 +308,7 @@ body {
 
 /* Ogólna stylizacja tytułów sekcji */
 .section-title {
-    text-align: center;
+    text-align: end;
     font-size: 1.5em;
     margin-bottom: 20px;
 }
